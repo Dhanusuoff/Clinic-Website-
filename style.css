@@ -1,0 +1,87 @@
+body {
+     font-family: Arial,sans-serif;
+       margin: 0; 
+       background: #f4f4f4;
+       background: linear-gradient(135deg, #9078ee 0%, #5fc1ee 100%);
+       
+     }
+
+nav { 
+    background: #007bff;
+     color: rgb(235, 248, 247);
+      padding: 1rem;
+       display: flex;
+        justify-content: space-between;
+     }
+
+nav ul { 
+    list-style: none; 
+    display: flex;
+     gap: 1rem; 
+     margin: 0;
+     padding: 0; 
+}
+
+nav li {
+     cursor: pointer;
+     padding: 0.5rem; 
+     border-radius: 4px;
+     transition: background 0.3s;
+    }
+
+nav li:hover { 
+    background: rgb(148, 144, 144);
+ } 
+
+.page {
+    display: none;
+    padding: 2rem;
+     background: rgb(29, 121, 212);
+      margin: 2rem;
+       border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+     }
+
+.page.active {
+    display: block;
+     animation: fadeIn 0.5s ease;
+     }
+
+.grid {
+    display: grid;
+    grid-template-columns:
+    repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background: rgba(27, 103, 106, 0.055);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}   
+
+@media (max-width: 768px) {
+    nav { 
+        flex-direction: column;
+     }
+    nav ul { 
+        flex-direction: column;
+         gap: 0.5rem;
+}
+
+    .page {
+        margin: 1rem;
+     }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+     to { opacity: 1; }
+}
+

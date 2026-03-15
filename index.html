@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClinicDesk Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>ClinicDesk</h1>
+        <ul>
+
+            <li onclick="showPage('home')">Home</li>
+            <li onclick="showPage('login')">Login</li>
+            <li onclick="showPage('dashboard')">Dashboard</li>
+            <li onclick="showPage('book')">Book Appt</li>
+            <li onclick="showPage('appointments')">Appointments</li>
+            <li onclick="showPage('patients')">Patients</li>
+            <li onclick="showPage('patients-profile')">Profile profile</li>
+            <li onclick="showPage('doctors')">Doctors</li>
+            <li onclick="showPage('token-view')">Token</li>
+            <li onclick="showPage('history')">History</li>
+            <li onclick="showPage('reports')">Reports</li>
+            <li onclick="showPage('notifications')">Notifications</li>
+            <li onclick="showPage('billing')">Billing</li> 
+            <li onclick="showPage('settings')">Settings</li>
+            <li onclick="showPage('help')">Help</li>
+           
+        </ul>
+    </nav>
+    <main id="content">
+
+       <section id="home" class="page">
+            <h2>Welcome to ClinicDesk</h2>
+            <p>Your all-in-one clinic management solution.</p>
+        </section>
+
+        <section id="login" class="page">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="text" placeholder="Username" required><br>
+                <input type="password" placeholder="Password" required><br>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <section id="dashboard" class="page">
+            <h2>Dashboard</h2>
+            <p>Overview of clinic activities.</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>Total Patients</h3>
+                    <p>150</p>
+                </div><br>
+                <div class="card">
+                    <h3>Appointments Today</h3>
+                    <p>15</p>
+                </div><br>
+                <div class="card">
+                    <h3>Doctors</h3>
+                    <p>5</p>
+                </div>
+            </div> 
+        </section>
+
+        <section id="book" class="page">
+            <h2>Book Appointment</h2>
+            <form id="book-form">
+                <input type="text" placeholder="Patient Name" required>
+                <input type="datetime-local" required>
+                <button type="submit">Book</button>
+            </form>
+        </section>
+
+<section id="appointments" class="page">
+            <h2>Appointment List</h2>
+        <div id="appointment-list" class="grid">
+            <table>
+            <tr> <th> Token </th> <th> Patient </th> <th> Doctor </th> <th> Date </th> </tr>
+
+            <tr> <td> 1 </td> <td> Ahrish </td> <td> Dr. yogaraj </td> <td> 28-01-2026 </td> </tr>
+
+            <tr> <td> 2 </td> <td> Arun </td> <td> Dr. yogaraj </td> <td> 18-01-2026 </td> </tr>
+
+            <tr> <td> 3 </td> <td> Thamayadhi </td> <td> Dr. Kamal </td> <td> 08-01-2026 </td> </tr>
+
+            <tr> <td> 4 </td> <td> Dhanusu </td> <td> Dr. sangavi </td> <td> 27-01-2026 </td> </tr>
+
+            <tr> <td> 5 </td> <td> Anbu </td> <td> Dr. Kavin </td> <td> 23-01-2026 </td> </tr>
+
+            <tr> <td> 6 </td> <td> Kannan </td> <td> Dr. Devi </td> <td> 20-01-2026 </td> </tr>
+            
+            <tr> <td> 7 </td> <td> Tharun </td> <td> Dr. sangavi </td> <td> 15-01-2026 </td> </tr>
+        
+            <tr> <td> 8 </td> <td> Selvi </td> <td> Dr. Devi </td> <td> 10-01-2026 </td> </tr>
+
+            <tr> <td> 9 </td> <td> Tharun </td> <td> Dr. sangavi </td> <td> 15-01-2026 </td> </tr>
+
+            <tr> <td> 10 </td> <td> Selvi </td> <td> Dr. Devi </td> <td> 10-01-2026 </td> </tr>
+
+            <tr> <td> 11 </td> <td> Tharun </td> <td> Dr. sangavi </td> <td> 15-01-2026 </td> </tr>
+
+            <tr> <td> 12 </td> <td> Selvi </td> <td> Dr. Devi </td> <td> 10-01-2026 </td> </tr>  
+       
+            <tr> <td> 13 </td> <td> Tharun </td> <td> Dr. sangavi </td> <td> 15-01-2026 </td> </tr>
+
+            <tr> <td> 14 </td> <td> Selvi </td> <td> Dr. Devi </td> <td> 10-01-2026 </td> </tr>
+
+            <tr> <td> 15 </td> <td> Tharun </td> <td> Dr. sangavi </td> <td> 15-01-2026 </td> </tr>
+           
+            <tr> <td> 16 </td> <td> Selvi </td> <td> Dr. Devi </td> <td> 10-01-2026 </td> </tr>
+
+            <tr> <td> 17 </td> <td> Tharun </td> <td> Dr. sangavi </td> <td> 15-01-2026 </td> </tr> 
+           
+            <tr> <td> 18 </td> <td> Selvi </td> <td> Dr. Devi </td> <td> 10-01-2026 </td> </tr>
+
+            <tr> <td> 19 </td> <td> Tharun </td> <td> Dr. sangavi </td> <td> 15-01-2026 </td> </tr> 
+          
+            <tr> <td> 20 </td> <td> Selvi </td> <td> Dr. Devi </td> <td> 10-01-2026 </td> </tr>
+           
+            <tr> <td> 21 </td> <td> Tharun </td> <td> Dr. sangavi </td> <td> 15-01-2026 </td> </tr> 
+            
+            <tr> <td> 22 </td> <td> Selvi </td> <td> Dr. Devi </td> <td> 10-01-2026 </td> </tr> 
+           
+            </table>
+            </div>
+        </section>
+
+        <section id="patients" class="page">
+            <h2>Patients list</h2>
+            <div id="patient-list" class="grid">
+                <table>
+                    <tr> <th> Patient ID </th> <th> Name </th> <th> Age </th> <th> Gender </th> <th> Contact </th> </tr>
+                    <tr> <td> P001 </td> <td> Ahrish </td> <td> 30 </td> <td>   Male </td> <td> 9823875439 </td> </tr>
+                    <tr> <td> P002 </td> <td> Arun </td> <td> 25 </td> <td> Male </td> <td> 9823875440 </td> </tr> 
+                    <tr> <td> P003 </td> <td> Thamayadhi </td> <td> 28 </td> <td> Female </td> <td> 9823875441 </td> </tr>
+                    <tr> <td> P004 </td> <td> Dhanusu </td> <td> 35 </td> <td>  Male </td> <td> 9823875442 </td> </tr>
+                    <tr> <td> P005 </td> <td> Anbu </td> <td> 22 </td> <td> Male </td> <td> 9823875443 </td> </tr>
+                    <tr> <td> P006 </td> <td> Kannan </td> <td> 40 </td> <td>   Male </td> <td> 9823875444 </td> </tr>
+                    <tr> <td> P007 </td> <td> Tharun </td> <td> 27 </td> <td> Male </td> <td> 9823875445 </td> </tr>
+                    <tr> <td> P008 </td> <td> Selvi </td> <td> 32 </td> <td> Female </td> <td> 9823875446 </td> </tr>
+                </table>
+            </div>
+        </section>
+
+            <section id="patients-profile" class="page">
+                <h2>Patient Profile</h2>
+                <div id="patient-profile" class="flex">
+                    <h3>Ahrish's Profile</h3>
+                    <p><strong>Name:</strong> Ahrish</p>
+                    <p><strong>Age:</strong> 30</p>
+                    <p><strong>Gender:</strong> Male</p>
+                    <p><strong>Contact:</strong> 9823875439</p>
+                    <p><strong>Address:</strong> Chennai</p>
+                    <p><strong>Blood Group:</strong> B+ve</p>
+                </div>
+            </section>  
+
+        <section id="doctors" class="page">
+            <h2>Doctors</h2>
+            <div id="doctor-list" class="grid">
+                 <h3>Doctor Schedule</h3>
+
+        <table>
+            <tr>
+            <th>Doctor Name</th>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Status</th>
+            </tr>
+
+            <tr>
+            <td>Dr. Kamal</td>
+            <td>Monday</td>
+            <td>9:00 AM - 1:00 PM</td>
+            <td>Available</td>
+            </tr>
+
+            <tr>
+            <td>Dr. Kavin</td>
+            <td>Tuesday</td>
+            <td>9:00 AM - 1:00 PM</td>
+            <td>Available</td>
+            </tr>
+
+            <tr>
+            <td>Dr. sangavi</td>
+            <td>wednesday</td>
+            <td>9:00 AM - 1:00 PM</td>
+            <td>Available</td>
+            </tr>
+
+            <tr>
+            <td>Dr. yogaraj</td>
+            <td>Thuseday</td>
+            <td>9:00 AM - 1:00 PM</td>
+            <td>Available</td>
+            </tr>
+
+            <tr>
+            <td>Dr. Sri Devi</td>
+            <td>Firday</td>
+            <td>9:00 AM - 1:00 PM</td>
+            <td>Available</td>
+            </tr>
+        </table>
+            </div>
+        </section>
+
+        <section id="token-view" class="page">
+            <h2>Token View</h2>
+                <div class="token-box">
+                    <p class="info">Current Token</p>
+                <div class="token-number">12</div>
+                    <p class="info">Patient Name: Ahrish</p>
+                    <p class="info">Doctor: Dr. Kamal</p>
+                </div>
+
+                <div class="token-box">
+                    <p class="info">Current Token</p>
+                <div class="token-number">16</div>
+                    <p class="info">Patient Name: Anbu</p>
+                    <p class="info">Doctor: Dr. yogaraj</p>
+                </div>     
+
+                <div class="token-box">
+                    <p class="info">Current Token</p>
+                <div class="token-number">18</div>
+                    <p class="info">Patient Name: Dhanusu</p>
+                    <p class="info">Doctor: Dr. sangavi</p>
+                </div>
+
+                <div class="token-box">
+                    <p class="info">Current Token</p>
+                <div class="token-number">20</div>
+                    <p class="info">Patient Name: Thamayadhi</p>
+                    <p class="info">Doctor: Dr. Devi</p>
+                </div>
+        </section>
+
+         <section id="history" class="page">
+           <h2>Patient Visit History</h2>
+            <div id="history-list" class="grid">
+
+                 <table>
+                    <tr> <th> Date </th> <th> Doctor </th> <th> Diagnosis </th> </tr>
+                    <tr> <td> 10-01-2026 </td> <td> Dr. Kamal </td> <td> Fever </td> </tr>
+                    <tr> <td> 15-01-2026 </td> <td> Dr. yogaraj </td> <td> Cold </td> </tr>
+                    <tr> <td> 10-01-2026 </td> <td> Dr. Kamal </td> <td> Fever </td> </tr>
+                    <tr> <td> 10-01-2026 </td> <td> Dr. Kamal </td> <td> Fever </td> </tr>
+                </table>
+
+            </div>
+        </section>
+        
+        <section id="reports" class="page">
+
+            <div class="box">
+                <h2>Reports</h2>
+                    <p>Total Patients: 150</p>
+                    <p>Total Appointments: 380</p>
+                    <p>Monthly Revenue: ₹45,000</p>
+            </div>
+            
+        </section>
+
+        <section id="notifications" class="page">
+            <h2>Notifications</h2>
+            <ul>
+                <li>New appointment booked for Ahrish with Dr. Kamal on 28-01-2026.</li>
+                <li>Patient Arun has a follow-up appointment with Dr. yogaraj on 18-01-2026.</li>
+                <li>Dr. sangavi is unavailable on 27-01-2026 due to a conference.</li>
+                <li>Patient Thamayadhi's test results are ready for review.</li>
+                <li>Monthly report generated: Total Patients - 150, Revenue - ₹45,000.</li>
+            </ul>
+        </section>
+
+        <section id="billing" class="page">
+            <h2>Billing</h2>
+            <div id="billing-list" class="grid">
+                <table>
+                    <tr> <th> Date </th> <th> Amount </th> <th> Status </th> </tr>
+                    <tr> <td> 10-01-2026 </td> <td> $100 </td> <td> Paid </td> </tr>
+                    <tr> <td> 15-01-2026 </td> <td> $150 </td> <td> Unpaid </td> </tr>
+                    <tr> <td> 10-01-2026 </td> <td> $100 </td> <td> Paid </td> </tr>
+                    <tr> <td> 10-01-2026 </td> <td> $100 </td> <td> Paid </td> </tr>
+                    <tr> <td> 10-01-2026 </td> <td> $100 </td> <td> Paid </td> </tr>
+                    <tr> <td> 15-01-2026 </td> <td> $150 </td> <td> Unpaid </td> </tr>
+                    <tr> <td> 10-01-2026 </td> <td> $100 </td> <td> Paid </td> </tr>
+                    <tr> <td> 10-01-2026 </td> <td> $100 </td> <td> Paid </td> </tr> 
+                    <tr> <td> 10-01-2026 </td> <td> $100 </td> <td> Paid </td> </tr>
+                    <tr> <td> 15-01-2026 </td> <td> $150 </td> <td> Unpaid </td> </tr>
+                    <tr> <td> 10-01-2026 </td> <td> $100 </td> <td> Paid </td> </tr>
+                    <tr> <td> 10-01-2026 </td> <td> $100 </td> <td> Paid </td> </tr>
+                    <tr> <td> 10-01-2026 </td> <td> $100 </td> <td> Paid </td> </tr>
+                    <tr> <td> 15-01-2026 </td> <td> $150 </td> <td> Unpaid </td> </tr>
+                    <tr> <td> 10-01-2026 </td> <td> $100 </td> <td> Paid </td> </tr>
+                    <tr> <td> 10-01-2026 </td> <td> $100 </td> <td> Paid </td> </tr>
+                    <tr> <td> 10-01-2026 </td> <td> $100 </td> <td> Paid </td> </tr>
+                    <tr> <td> 15-01-2026 </td> <td> $150 </td> <td> Unpaid </td> </tr>
+                    <tr> <td> 10-01-2026 </td> <td> $100 </td> <td> Paid </td> </tr>
+                    <tr> <td> 10-01-2026 </td> <td> $100 </td> <td> Paid </td> </tr>
+                </table>
+
+                <!-- <input type="text" placeholder="Patient Name">
+                <input type="number" placeholder="Consultation Fee">
+                <input type="number" placeholder="Medicine Cost">
+                <button>Generate Bill</button> -->
+            </div>
+        </section>
+
+        <section id="settings" class="page">
+            <!-- <h2>Settings</h2>
+            <p>Configure your account settings.</p>  -->
+                <div class="settings-box">
+                    <h2>Settings</h2>
+                    <p>Configure your account settings.</p>
+                    <div class="setting-item">
+                        <label for="notification">Enable Notifications:</label>
+                        <input type="checkbox" id="notification" name="notification" checked>
+                    </div>
+                    <div class="setting-item">
+                        <label for="theme">Dark Mode:</label>
+                        <input type="checkbox" id="theme" name="theme">
+                    </div>
+                    <div class="setting-item">
+                        <label for="language">Language:</label>
+                        <select id="language" name="language">
+                            <option value="en">English</option>
+                            <option value="es">Spanish</option>
+                            <option value="fr">French</option>
+                        </select>
+                    </div>
+                    <div class="box">
+    
+                     <br>
+                    <input type="text" placeholder="Clinic Name">
+                    <input type="text" placeholder="Doctor Name">
+                    <input type="text" placeholder="Contact Number">
+                    </div>
+
+        </section>
+
+        <section id="help" class="page">
+            <h2>Help</h2>
+            <p>• Login to access dashboard</p>
+            <p>• Book appointment for patients</p>
+            <p>• View visit history and billing</p>
+            <p>• Contact admin for support</p>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+
+</body>
+</html>
